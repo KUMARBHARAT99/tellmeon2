@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Movement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4a90e2, #a040ff);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(45deg, #ff00ff, #0000ff);
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+        }
+        .updates {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .update-box {
+            background: white;
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .update-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .update-box img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 10px auto;
+        }
+        .profile-picture {
+          width: 150px;  /* Ya jitna chhota rakhna ho */
+          height: 150px;
+          object-fit: cover;  /* Image ko fit rakhne ke liye */
+          border-radius: 50%;  /* Round shape ke liye */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header"> 
+        🌍 Join Us in Building a Greener Future! 🚀
+    </div>
+    <div class="updates">
+        <div class="update-box">
+            <img src="https://media.giphy.com/media/3ov9k9AyzTi3lX8p6E/giphy.gif" alt="Event GIF" onerror="this.onerror=null;this.src='https://via.placeholder.com/150/00FF00/FFFFFF?text=Sustainability+Event';">
+            🌱 <strong>Sustainability Event:</strong> Join us on <strong>March 15th</strong> for discussions on eco-friendly innovations!
+        </div>
+        <div class="update-box">
+            <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="Webinar GIF" onerror="this.onerror=null;this.src='https://via.placeholder.com/150/0000FF/FFFFFF?text=AI+Green+Tech+Webinar';">
+            🚀 <strong>AI & Green Tech Webinar:</strong> Register for our exclusive session on <strong>April 2nd</strong>!
+        </div>
+        <div class="update-box">
+            <img src="https://media.giphy.com/media/26ufl8wp0KrkBC3pu/giphy.gif" alt="Pollution GIF" onerror="this.onerror=null;this.src='https://via.placeholder.com/150/FF0000/FFFFFF?text=Pollution+Alert';">
+            🔥 <strong>Environmental Alert:</strong> Pollution levels have increased by <strong>60% in the last 5 years.</strong>
+        </div>
+        <div class="update-box">
+            <img src="https://media.giphy.com/media/3o7TKsQ7FqohZ6LhYQ/giphy.gif" alt="Members GIF" onerror="this.onerror=null;this.src='https://via.placeholder.com/150/FFA500/FFFFFF?text=Community+Members';">
+            👥 <strong>Community Growth:</strong> We now have <strong>2,345 active members!</strong>
+        </div>
+        <div class="update-box">
+            <img src="https://media.giphy.com/media/26BRzozg4TCBXv6QU/giphy.gif" alt="Skills GIF" onerror="this.onerror=null;this.src='https://via.placeholder.com/150/800080/FFFFFF?text=Skills+Network';">
+            🌟 <strong>Skills in Network:</strong> AI, Web Development, and Data Science professionals are growing!
+        </div>
+    </div>
+    
+    
+    
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-3xl mt-6 mx-auto grid grid-cols-1 gap-6">
+        
+        <!-- Join Form -->
+        <div class="text-center">
+            <h2 class="text-2xl font-bold text-indigo-600">Join the Movement</h2>
+            <p class="text-gray-600 mb-4">Be part of the change and contribute to a sustainable future.</p>
+            <img src="https://via.placeholder.com/100" class="profile-pic mx-auto rounded-full border-2 border-indigo-500" id="profilePic">
+            <input type="file" id="fileInput" accept="image/*" class="hidden">
+            <button class="mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full w-full" onclick="document.getElementById('fileInput').click();">Upload Profile Picture</button>
+            <input type="text" class="w-full mt-3 p-2 border border-gray-300 rounded-lg" placeholder="Your Name" required>
+            <input type="email" class="w-full mt-3 p-2 border border-gray-300 rounded-lg" placeholder="Your Email" required>
+            <textarea class="w-full mt-3 p-2 border border-gray-300 rounded-lg" placeholder="Why do you want to join?" rows="3" required></textarea>
+            <button class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full w-full" onclick="window.location.href='index.html';">Submit</button>
+        </div>
+    </div>
+
+    <script>
+       document.getElementById('fileInput').addEventListener('change', function (event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            let img = document.getElementById('profilePic');
+            img.src = e.target.result;
+            img.style.width = "150px"; // Force apply width
+            img.style.height = "150px";
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+    </script>
+<div style="display: flex; gap: 10px; justify-content: center;">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/Z1G_QB5A_7Q" 
+        frameborder="0" allowfullscreen>
+    </iframe>
+
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/R0Cgh9lEOeA" 
+        frameborder="0" allowfullscreen>
+    </iframe>
+</div>
+
+
+</body>
+</html>
+```

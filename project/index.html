@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillConnect-AI | AI-Powered Green Career Platform</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>SkillConnect-AI</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#sustainability" class="nav-link">Green Jobs</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#profile" class="nav-link">Profile</a></li>
+                
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Welcome to <span class="gradient-text">SkillConnect-AI</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    AI-Powered Green Innovation: A Future-Ready Sustainable Solution 🌱
+                </h2>
+                <p class="hero-description">
+                    Revolutionizing career guidance with AI-driven insights, connecting talent with sustainable opportunities 
+                    and green innovations. Build your future while protecting our planet.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('features')">
+                        <i class="fas fa-rocket"></i>
+                        Explore Features
+                    </button>
+                    <button class="btn btn-secondary" onclick="openModal('chatbot')">
+                        <i class="fas fa-robot"></i>
+                        AI Assistant
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI-Powered</h3>
+                    <p>Smart career matching</p>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Green Focus</h3>
+                    <p>Sustainable solutions</p>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Global Network</h3>
+                    <p>Connect worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Discover how our AI-driven platform transforms career development</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>AI-Powered Career Guidance</h3>
+                    <p>Get personalized recommendations for green careers in renewable energy, sustainable architecture, and climate tech using advanced machine learning.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Eco-Friendly Business Management</h3>
+                    <p>Help companies hire talent aligned with sustainable practices and analyze carbon footprints to suggest greener alternatives.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Blockchain Credentials</h3>
+                    <p>Secure storage and verification of green certifications and eco-friendly business credentials using decentralized technology.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics for Sustainability</h3>
+                    <p>Analyze global job trends and climate impact of industries to help make data-driven eco-friendly decisions.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>IoT-Enabled Smart Workspaces</h3>
+                    <p>Suggest energy-efficient workplaces with IoT monitoring and help companies adopt green infrastructure solutions.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Sustainability Training</h3>
+                    <p>Personalized learning modules on sustainable development and green technologies tailored to your career path.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About SkillConnect-AI</h2>
+                    <p class="lead">
+                        We're revolutionizing the intersection of artificial intelligence and sustainable development, 
+                        creating a platform that doesn't just find jobs—it builds a greener future.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>AI-driven career matching with 95% accuracy</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Partnership with 500+ green companies</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Blockchain-verified sustainability credentials</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time environmental impact tracking</span>
+                        </div>
+                    </div>
+                    <div class="about-links">
+                        <a href="https://sites.google.com/view/ai-tech99/home" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Our Projects
+                        </a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>10K+</h3>
+                            <p>Green Jobs Matched</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>500+</h3>
+                            <p>Partner Companies</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>95%</h3>
+                            <p>Match Accuracy</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Countries Served</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="sustainability">
+        <div class="container">
+            <div class="section-header">
+                <h2>Green Innovation Hub</h2>
+                <p>Explore sustainable career opportunities and environmental solutions</p>
+            </div>
+            <div class="sustainability-grid">
+                <div class="sustainability-card">
+                    <div class="card-header">
+                        <i class="fas fa-solar-panel"></i>
+                        <h3>Renewable Energy</h3>
+                    </div>
+                    <p>Discover careers in solar, wind, and hydropower industries with our AI-powered matching system.</p>
+                    <button class="btn btn-small" onclick="openModal('renewable')">Learn More</button>
+                </div>
+                <div class="sustainability-card">
+                    <div class="card-header">
+                        <i class="fas fa-recycle"></i>
+                        <h3>Circular Economy</h3>
+                    </div>
+                    <p>Join the movement towards waste reduction and sustainable resource management.</p>
+                    <button class="btn btn-small" onclick="openModal('circular')">Learn More</button>
+                </div>
+                <div class="sustainability-card">
+                    <div class="card-header">
+                        <i class="fas fa-tree"></i>
+                        <h3>Climate Tech</h3>
+                    </div>
+                    <p>Explore cutting-edge technologies fighting climate change and environmental degradation.</p>
+                    <button class="btn btn-small" onclick="openModal('climate')">Learn More</button>
+                </div>
+            </div>
+            <div class="green-stats">
+                <div class="green-stat">
+                    <h3>2.5M</h3>
+                    <p>Tons CO₂ Reduced</p>
+                </div>
+                <div class="green-stat">
+                    <h3>15K</h3>
+                    <p>Green Jobs Created</p>
+                </div>
+                <div class="green-stat">
+                    <h3>100+</h3>
+                    <p>Sustainable Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h1>Welcome! We`re glad you`re here!<h1>
+                    <h2>Get In Touch</h2>
+                    <p>Ready to start your sustainable career journey? Connect with us today!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>bharat@skillconnect-ai.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 (456) bkc_error_04</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/invites/contact/?igsh=drpb9640s9q6&utm_content=sic7ngn" target="_blank">Follow us on Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/movvrdkj" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="interest" required>
+                                <option value="">Select Your Interest</option>
+                                <option value="green-jobs">Green Job Opportunities</option>
+                                <option value="ai-training">AI Training Programs</option>
+                                <option value="sustainability">Sustainability Consulting</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p class="signup-link">Don't have an account? <a href="#" onclick="openModal('signupModal')">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbotModal" class="modal">
+        <div class="modal-content chatbot-content">
+            <span class="close" onclick="closeModal('chatbotModal')">&times;</span>
+            <div class="chatbot-header">
+                <i class="fas fa-robot"></i>
+                <h3>AI Career Assistant</h3>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <p>Hello! I'm your AI career assistant. How can I help you find your perfect green career today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>SkillConnect-AI</span>
+                    </div>
+                    <p>Building a sustainable future through AI-powered career development and green innovation.</p>
+                   <div class="social-links">
+    <a href="https://www.linkedin.com/in/bharat-kumar-44bb39364" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/invites/contact/?igsh=drpb9640s9q6&utm_content=sic7ngn" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+</div>
+
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#sustainability">Green Jobs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Career Guide</a></li>
+                        <li><a href="#">Sustainability Blog</a></li>
+                        <li><a href="#">Training Programs</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Actions</h4>
+                    <button class="btn btn-outline btn-small" onclick="openModal('loginModal')">Login</button>
+                    <button class="btn btn-primary btn-small" onclick="openModal('chatbotModal')">AI Assistant</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillConnect-AI. All Rights Reserved. | Building a greener tomorrow, today.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/chatbot.js"></script>
+    
+    <!-- Chatbase Integration -->
+   
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Z6k-W9R9m_QEBDByJm9bs";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+</body>
+</html>
